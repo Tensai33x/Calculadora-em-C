@@ -1,32 +1,31 @@
 #include  <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 int main(){
-int num1, nu, res;
+setlocale(LC_ALL,"portuguese");
+float num1, nu, res;
 char ex;
-    printf("numero 1: ");
-        if (scanf("%d", &num1) != 1) {
-            printf("Entrada invalida! Digite apenas: numeros\n");
+	num1:
+    printf("\nDigite o Primeiro Número: ");
+        if (scanf("%f", &num1) != 1) {
+            printf("\n\nEntrada inválida! Digite apenas números\n");
             fflush(stdin);
-            system("pause");
-            system("cls");
-            main();} 
+            goto num1;} 
         fflush(stdin);
+    fator:
     printf("\nfator: ");
         if (scanf(" %c",&ex)!=1 || (ex != '+' && ex != '-' && ex != '*' && ex != '/')){
-            printf("Entrada invalida! Digite apenas +, -, * ou /.\n");
+            printf("\n\nOperador inválido! Digite: +, -, * ou /.\n");
             fflush(stdin);
-            system("pause");
-            system("cls");
-            main();}
+            goto fator;}
         fflush(stdin);
-    printf("\nnumero 2: ");
-        if (scanf("%d", &nu) != 1){
-            printf("Entrada invalida! Digite apenas: numeros\n");
+    num2:
+    printf("\nDigite o Segundo Número: ");
+        if (scanf("%f", &nu) != 1){
+            printf("\n\nEntrada inválida! Digite apenas números\n");
             fflush(stdin);
-            system("pause");
-            system("cls");
-            main();} 
+            goto num2;} 
         fflush(stdin);
 switch (ex){
     case '+':
@@ -44,7 +43,7 @@ switch (ex){
     default:   
         break;
     }
-    printf("\nResultado:%d\n",res);
+    printf("\nResultado:%.2f\n",res);
     system("pause");
     system("cls");
     main();
