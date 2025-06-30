@@ -45,8 +45,8 @@ switch (ex){
         break;
     }
     printf("\nResultado:%.2f\n",res);
-    printf("Pressione qualquer tecla para reiniciar a calculadora.");
-    getch();
+    printf("Pressione ENTER para reiniciar a calculadora.");
+    getchar();
     system("cls");
     main();
 }
