@@ -1,4 +1,4 @@
-#include  <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
@@ -8,23 +8,23 @@ float num1, nu, res;
 char ex;
     system("cls");
 	num1:
-    printf("Digite o Primeiro Númeaaro: ");
+    printf("Digite o Primeiro N�mero: ");
         if (scanf("%f", &num1) != 1) {
-            printf("\n\nEntrada inválida! Digite apenas Números\n");
+            printf("\n\nEntrada inv�lida! Digite apenas N�meros\n");
             fflush(stdin);
             goto num1;} 
         fflush(stdin);
     fator:
     printf("Digite o Operador: ");
         if (scanf(" %c",&ex)!=1 || (ex != '+' && ex != '-' && ex != '*' && ex != '/')){
-            printf("\n\nOperador inválido! Digite: +, -, * ou /.\n");
+            printf("\n\nOperador inv�lido! Digite: +, -, * ou /.\n");
             fflush(stdin);
             goto fator;}
         fflush(stdin);
     num2:
-    printf("Digite o Segundo Número: ");
+    printf("Digite o Segundo N�mero: ");
         if (scanf("%f", &nu) != 1){
-            printf("\n\nEntrada inválida! Digite apenas Números\n");
+            printf("\n\nEntrada inv�lida! Digite apenas N�meros\n");
             fflush(stdin);
             goto num2;} 
         fflush(stdin);
