@@ -8,23 +8,23 @@ float num1, nu, res;
 char ex;
     system("cls");
 	num1:
-    printf("Digite o Primeiro Número: ");
+    printf("Digite o Primeiro Nï¿½mero: ");
         if (scanf("%f", &num1) != 1) {
-            printf("\n\nEntrada inválida! Digite apenas números\n");
+            printf("\n\nEntrada invï¿½lida! Digite apenas nï¿½meros\n");
             fflush(stdin);
             goto num1;} 
         fflush(stdin);
     fator:
     printf("Digite o Operador: ");
         if (scanf(" %c",&ex)!=1 || (ex != '+' && ex != '-' && ex != '*' && ex != '/')){
-            printf("\n\nOperador inválido! Digite: +, -, * ou /.\n");
+            printf("\n\nOperador invï¿½lido! Digite: +, -, * ou /.\n");
             fflush(stdin);
             goto fator;}
         fflush(stdin);
     num2:
-    printf("Digite o Segundo Número: ");
+    printf("Digite o Segundo Nï¿½mero: ");
         if (scanf("%f", &nu) != 1){
-            printf("\n\nEntrada inválida! Digite apenas números\n");
+            printf("\n\nEntrada invï¿½lida! Digite apenas nï¿½meros\n");
             fflush(stdin);
             goto num2;} 
         fflush(stdin);
