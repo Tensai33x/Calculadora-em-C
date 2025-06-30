@@ -8,7 +8,7 @@ float num1, nu, res;
 char ex;
     system("cls");
 	num1:
-    printf("Digite o Primeiro Número: ");
+    printf("Digite o Primeiro Númeaaro: ");
         if (scanf("%f", &num1) != 1) {
             printf("\n\nEntrada inválida! Digite apenas Números\n");
             fflush(stdin);
