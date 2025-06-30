@@ -6,22 +6,23 @@ int main(){
 setlocale(LC_ALL,"portuguese");
 float num1, nu, res;
 char ex;
+    system("cls");
 	num1:
-    printf("\nDigite o Primeiro Número: ");
+    printf("Digite o Primeiro Número: ");
         if (scanf("%f", &num1) != 1) {
             printf("\n\nEntrada inválida! Digite apenas números\n");
             fflush(stdin);
             goto num1;} 
         fflush(stdin);
     fator:
-    printf("\nfator: ");
+    printf("Digite o Operador: ");
         if (scanf(" %c",&ex)!=1 || (ex != '+' && ex != '-' && ex != '*' && ex != '/')){
             printf("\n\nOperador inválido! Digite: +, -, * ou /.\n");
             fflush(stdin);
             goto fator;}
         fflush(stdin);
     num2:
-    printf("\nDigite o Segundo Número: ");
+    printf("Digite o Segundo Número: ");
         if (scanf("%f", &nu) != 1){
             printf("\n\nEntrada inválida! Digite apenas números\n");
             fflush(stdin);
@@ -44,7 +45,8 @@ switch (ex){
         break;
     }
     printf("\nResultado:%.2f\n",res);
-    system("pause");
+    printf("Pressione qualquer tecla para reiniciar a calculadora.");
+    getch();
     system("cls");
     main();
 }
