@@ -1,8 +1,8 @@
 #include  <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
 int main(){
+<<<<<<< HEAD
 setlocale(LC_ALL,"portuguese");
 float num1, nu, res;
 char ex;
@@ -50,3 +50,10 @@ switch (ex){
     system("cls");
     main();
 }
+=======
+
+
+
+    
+}
+>>>>>>> parent of e82f3b3 (Revert "test")
